@@ -1,0 +1,148 @@
+.benifits {
+  margin: 92px 0;
+
+  @media (max-width: $breakpoint1450) {
+    margin: 44px 0;
+  }
+
+  @media (max-width: $breakpoint768) {
+    margin: 32px 0;
+  }
+
+  // .benifits__inner
+
+  &__inner {
+    max-width: 1276px;
+    margin: 0 auto;
+  }
+
+  // .benifits__list
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    margin-bottom: 92px;
+
+    @media (max-width: 1024px) {
+      margin-bottom: 44px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 24px;
+      justify-items: start;
+    }
+  }
+
+  // .benifits__item
+
+  &__item {
+    position: relative;
+    padding-left: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #F58113;
+      width: 1px;
+      height: 45px;
+
+      @media (max-width: 1024px) {
+        height: 32px;
+      }
+
+      @media (max-width: $breakpoint768) {
+        background-color: #C4C4C4;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      padding-left: 8px;
+      font-size: 11px;
+
+      @media (max-width: $breakpoint768) {
+        padding-left: 12px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  // .benifits__slider
+
+  &__slider {
+    padding: 0 24px;
+  }
+
+  // .benifits__slider-wrapper
+
+  &__slider-wrapper {
+    display: grid;
+    grid-auto-flow: column;
+  }
+
+  // .benifits__slide
+
+  &__slide {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    row-gap: 24px;
+
+    img {
+      max-width: 100%;
+    }
+
+    p {
+      color: #000;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 124.2%;
+    }
+  }
+
+  // .benifits__slider-arrow
+
+  &__slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+
+    &:hover {
+      svg path {
+        fill: #F58113;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      svg {
+        max-width: 8px;
+        height: auto;
+      }
+    }
+
+    @media (max-width: $breakpoint768) {
+      display: none;
+    }
+  }
+
+  // .benifits__slider-arrow--prev
+
+  &__slider-arrow--prev {
+    left: 0;
+  }
+
+  // .benifits__slider-arrow--next
+
+  &__slider-arrow--next {
+    right: 0;
+  }
+}

@@ -1,0 +1,149 @@
+// Header
+
+.header {
+  padding: 10px 0;
+  overflow: hidden;
+
+  @media (max-width: $breakpoint768) {
+    padding: 16px 0;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+
+  // .header__top
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+
+    address {
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      color: #262626;
+
+      @media (max-width: 1024px) {
+        font-size: 9px;
+      }
+
+      @media (max-width: $breakpoint768) {
+        font-size: 16px;
+        display: none;
+      }
+    }
+  }
+
+  // .header__logo
+
+  &__logo {
+    margin-right: 100px;
+
+    @media (max-width: $breakpoint1450) {
+      margin-right: 0;
+
+      img {
+        max-width: 260px;
+      }
+    }
+
+    @media (max-width: $breakpoint768) {
+      display: flex;
+
+      img {
+        max-width: 150px;
+        width: 100%;
+      }
+    }
+  }
+
+  // .header__phone
+
+  &__phone {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #262626;
+
+    transition: color 0.2s linear;
+
+    &:hover {
+      color: #F58113;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 6px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 16px;
+      display: none;
+    }
+  }
+
+  // .header__btn
+
+  &__btn {
+    padding: 12px 54px;
+    color: #fff;
+
+    @media (max-width: 1024px) {
+      padding: 8px 34px;
+      font-size: 10px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      display: none;
+    }
+  }
+
+  // .header__bottom
+
+  &__bottom {
+
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 53px;
+
+      @media (max-width: $breakpoint1450) {
+        column-gap: 20px;
+      }
+
+      li,
+      a {
+        white-space: nowrap;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: #262626;
+
+        transition: color 0.2s linear;
+
+        &:hover {
+          color: #F58113;
+        }
+      }
+    }
+
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+}

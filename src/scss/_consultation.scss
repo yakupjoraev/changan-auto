@@ -1,0 +1,366 @@
+.consultation {
+  margin: 92px 0;
+  background-color: #F58113;
+  overflow: hidden;
+
+  @media (max-width: 1024px) {
+    margin: 48px 0;
+  }
+
+  @media (max-width: $breakpoint768) {
+    margin: 44px 0;
+    padding: 22px 0 32px;
+  }
+
+
+  // .consultation__inner
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 90px;
+
+    @media (max-width: 1200px) {
+      column-gap: 44px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      flex-direction: column;
+      row-gap: 26px;
+    }
+
+  }
+
+  // .consultation__slider
+
+  &__slider {
+    width: 747px;
+    margin: 0;
+    border-radius: 350px;
+    background-color: #FBFBFB;
+
+    @media (max-width: 1024px) {
+      width: 368px;
+      border-radius: 172px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      width: 100%;
+    }
+
+  }
+
+  // .consultation__slider-wrapper
+
+  &__slider-wrapper {}
+
+  // .consultation__slide
+
+  &__slide {
+    display: flex;
+    justify-content: center;
+    column-gap: 34px;
+    align-items: center;
+    padding: 16px 64px 26px;
+
+    &>img {
+      width: 208px;
+      min-width: 208px;
+      height: 208px;
+      border-radius: 100%;
+    }
+
+    @media (max-width: 1024px) {
+      padding: 20px 72px;
+      column-gap: 18px;
+
+      &>img {
+        width: 102px;
+        min-width: 102px;
+        height: 102px;
+      }
+    }
+
+    @media (max-width: $breakpoint768) {
+      flex-direction: column;
+      row-gap: 16px;
+      padding: 28px 32px 72px;
+      text-align: center;
+
+      &>img {
+        width: 208px;
+        min-width: 208px;
+        height: 208px;
+      }
+    }
+
+  }
+
+  // .consultation__slide-info
+
+  &__slide-info {
+
+    h4 {
+      margin-bottom: 6px;
+      color: #262626;
+      font-size: 21px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 124.2%;
+
+      @media (max-width: 1024px) {
+        margin-bottom: 2px;
+        font-size: 12px;
+      }
+
+      @media (max-width: $breakpoint768) {
+        margin-bottom: 6px;
+        font-size: 21px;
+      }
+
+    }
+
+    p {
+      margin-bottom: 12px;
+      max-width: 216px;
+      color: #939393;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 124.2%;
+
+      @media (max-width: 1024px) {
+        margin-bottom: 6px;
+        font-size: 7px;
+      }
+
+      @media (max-width: $breakpoint768) {
+        margin-bottom: 16px;
+        max-width: 100%;
+        padding: 0 20px;
+        font-size: 15px;
+      }
+
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+      width: fit-content;
+
+      img {
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+      }
+
+      span {
+        color: #0DA800;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 124.2%;
+      }
+
+      @media (max-width: 1024px) {
+        column-gap: 4px;
+
+        img {
+          width: 12px;
+          height: 12px;
+        }
+
+        span {
+          font-size: 9px;
+        }
+      }
+
+      @media (max-width: $breakpoint768) {
+        width: 100%;
+        padding: 0 20px;
+        justify-content: center;
+        column-gap: 8px;
+
+        img {
+          width: 25px;
+          height: 25px;
+        }
+
+        span {
+          font-size: 18px;
+        }
+      }
+
+    }
+  }
+
+  // .consultation__slider-arrow
+
+  &__slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+
+    &:hover {
+      svg path {
+        fill: #F58113;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      svg {
+        max-width: 8px;
+        height: auto;
+      }
+    }
+
+    @media (max-width: $breakpoint768) {
+      display: none;
+    }
+
+  }
+
+  // .consultation__slider-arrow--prev
+
+  &__slider-arrow--prev {
+    left: 60px;
+  }
+
+  // .consultation__slider-arrow--next
+
+  &__slider-arrow--next {
+    right: 60px;
+  }
+
+  // .consultation__info
+
+  &__info {
+    padding: 20px 0;
+
+    @media (max-width: $breakpoint768) {
+      padding: 0;
+    }
+
+  }
+
+  // .consultation__title
+
+  &__title {
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 124.2%;
+    color: #FFF;
+
+    @media (max-width: 1024px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 29px;
+    }
+
+  }
+
+  // .consultation__label
+
+  &__label {
+    margin-bottom: 34px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 154.2%;
+    color: #FFF;
+
+    @media (max-width: 1024px) {
+      margin-bottom: 18px;
+      font-size: 8px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 40px;
+      font-size: 16px;
+    }
+
+  }
+
+  // .consultation__form
+
+  &__form {
+
+    @media (max-width: 1024px) {
+
+      .footer__form-label {
+        column-gap: 4px;
+      }
+
+      .footer__form-label p {
+        font-size: 4px;
+      }
+
+      .footer__form-checkbox-decor {
+        width: 8px;
+        min-width: 8px;
+        height: 8px;
+      }
+
+      .footer__form-checkbox:checked~.footer__form-checkbox-decor {
+        background-size: cover;
+      }
+    }
+
+    @media (max-width: $breakpoint768) {
+      .footer__form-label {
+        column-gap: 10px;
+      }
+
+      .footer__form-label p {
+        font-size: 10px;
+      }
+
+      .footer__form-checkbox-decor {
+        width: 15px;
+        min-width: 15px;
+        height: 15px;
+      }
+
+      .footer__form-checkbox:checked~.footer__form-checkbox-decor {
+        background-size: contain;
+      }
+    }
+
+  }
+
+  // .consultation__btn
+
+  &__btn {
+    margin-bottom: 20px;
+    background-color: #fff;
+    color: #262626;
+
+    &:hover {
+      border-color: #fff;
+      color: #fff;
+    }
+
+    @media (max-width: 1024px) {
+      margin-bottom: 10px;
+      padding: 5px 25px;
+      border-radius: 0 10px;
+      font-size: 7px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      width: 100%;
+      padding: 12px 20px;
+      margin-bottom: 20px;
+      border-radius: 0 20px;
+      font-size: 14px;
+    }
+
+  }
+}
