@@ -16,13 +16,48 @@
 
   <!-- Main Page -->
   <main class="main">
-    @@include('./html/_hero.html')
-    @@include('./html/_benifits.html')
-    @@include('./html/_banner.html')
-    @@include('./html/_models.html')
-    @@include('./html/_online-assessment.html')
-    @@include('./html/_consultation.html')
-    @@include('./html/_map.html')
+    <div class="container">
+      <div class="pages">
+        <ul class="pages__list">
+          <li class="pages__item">
+            <a class="pages__link" href="main.html" target="_blank">
+              Главная
+            </a>
+          </li>
+
+          <li class="pages__item">
+            <a class="pages__link" href="modals.html" target="_blank">
+              modals
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <style>
+      .pages__list {
+        display: grid;
+        gap: 20px;
+        padding: 50px 0;
+      }
+
+      .pages__item {
+        display: grid;
+      }
+
+      .pages__link {
+        padding: 20px;
+        background-color: #000;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        color: #fff;
+      }
+
+      .pages__link:hover {
+        color: #f58113;
+      }
+    </style>
   </main>
 
   <!-- Footer -->

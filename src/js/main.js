@@ -49,7 +49,7 @@ function benifitsSlider() {
   }
 
   const swiper = new Swiper(".benifits__slider", {
-    slidesPerView: 1.5,
+    slidesPerView: 1.6,
 
     navigation: {
       nextEl: ".benifits__slider-arrow--next",
@@ -84,3 +84,45 @@ function benifitsSlider() {
 }
 
 benifitsSlider();
+
+function modelsMore() {
+  const container = document.querySelector('.models');
+
+  if (!container) {
+    return null
+  }
+
+  const moreBtn = document.querySelector('[data-models-more]');
+
+  moreBtn.addEventListener('click', () => {
+    document.querySelector('.models__list').classList.add("more-models");
+  })
+}
+
+modelsMore();
+
+
+const openModalBtns = document.querySelectorAll('.open-modal-btn');
+const closeModalBtns = document.querySelectorAll('.close-modal-btn');
+const modals = document.querySelectorAll('.modal');
+
+openModalBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const modalId = btn.dataset.modalId;
+    const modal = document.getElementById(modalId);
+    modal.classList.add('show');
+  });
+});
+
+closeModalBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const modal = btn.closest('.modal');
+    modal.classList.remove('show');
+  });
+});
+
+window.addEventListener('click', (event) => {
+  if (event.target.classList.contains('modal')) {
+    event.target.classList.remove('show');
+  }
+});
