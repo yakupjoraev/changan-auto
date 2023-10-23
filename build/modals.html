@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Index</title>
   <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/jquery-ui.css">
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -132,6 +133,219 @@
       </div>
     </div>
   </div>
+
+
+
+  <button class="open-modal-btn" data-modal-id="trade-in">Open Modal trade-in</button>
+  <div class="modal" id="trade-in">
+    <div class="modal-content trade-in">
+      <span class="close-modal-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+          <path
+            d="M13.8441 13.0822C13.897 13.1315 13.9395 13.191 13.969 13.2572C13.9984 13.3233 14.0143 13.3947 14.0155 13.4671C14.0168 13.5394 14.0035 13.6113 13.9764 13.6785C13.9493 13.7456 13.9089 13.8065 13.8577 13.8577C13.8065 13.9089 13.7456 13.9493 13.6785 13.9764C13.6113 14.0035 13.5394 14.0168 13.4671 14.0155C13.3947 14.0143 13.3233 13.9984 13.2572 13.969C13.191 13.9395 13.1315 13.897 13.0822 13.8441L6.99437 7.75714L0.906554 13.8441C0.804365 13.9393 0.669207 13.9911 0.529553 13.9886C0.389899 13.9862 0.256653 13.9296 0.157888 13.8308C0.0591221 13.7321 0.00254801 13.5988 8.3984e-05 13.4592C-0.00238005 13.3195 0.0494583 13.1844 0.144678 13.0822L6.23159 6.99437L0.144678 0.906554C0.0494583 0.804365 -0.00238005 0.669207 8.3984e-05 0.529553C0.00254801 0.389899 0.0591221 0.256653 0.157888 0.157888C0.256653 0.0591221 0.389899 0.00254801 0.529553 8.3984e-05C0.669207 -0.00238005 0.804365 0.0494583 0.906554 0.144678L6.99437 6.23159L13.0822 0.144678C13.1844 0.0494583 13.3195 -0.00238005 13.4592 8.3984e-05C13.5988 0.00254801 13.7321 0.0591221 13.8308 0.157888C13.9296 0.256653 13.9862 0.389899 13.9886 0.529553C13.9911 0.669207 13.9393 0.804365 13.8441 0.906554L7.75714 6.99437L13.8441 13.0822Z"
+            fill="#BCBCBC" />
+        </svg>
+      </span>
+
+      <form action="#" class="trade-in__inner">
+        <h3>
+          Введите данные вашего авто
+          <br>
+          для TRADE IN
+        </h3>
+
+        <div class="trade-in__inputs">
+          <input class="footer__form-input" type="text" placeholder="Имя">
+          <input class="footer__form-input" type="text" placeholder="КПП">
+          <input class="footer__form-input" type="text" placeholder="VIN">
+          <input class="footer__form-input" type="text" placeholder="Привод">
+          <input class="footer__form-input" type="text" placeholder="Гос.номер">
+          <input class="footer__form-input" type="text" placeholder="Пробег">
+        </div>
+
+        <div class="trade-in__footer">
+          <div class="get-offer__form consultation__form">
+            <input class="footer__form-input" type="tel" placeholder="+7 (___) ___-____" data-mask-input>
+
+            <a class="btn" href="#">Отправить заявку</a>
+
+            <label for="footer-checkbox6" class="footer__form-label">
+              <input type="checkbox" class="footer__form-checkbox" name="footer-checkbox6" id="footer-checkbox6">
+
+              <div class="footer__form-checkbox-decor"></div>
+
+              <p>Согласие на обработку персональных данных</p>
+            </label>
+          </div>
+
+          <div class="trade-in__picture">
+            <img src="./img/modals/3.png" alt="">
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <button class="open-modal-btn" data-modal-id="visit-plan">Open Modal Запланировать приезд</button>
+  <div class="modal" id="visit-plan">
+    <div class="modal-content trade-in visit-plan">
+      <span class="close-modal-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+          <path
+            d="M13.8441 13.0822C13.897 13.1315 13.9395 13.191 13.969 13.2572C13.9984 13.3233 14.0143 13.3947 14.0155 13.4671C14.0168 13.5394 14.0035 13.6113 13.9764 13.6785C13.9493 13.7456 13.9089 13.8065 13.8577 13.8577C13.8065 13.9089 13.7456 13.9493 13.6785 13.9764C13.6113 14.0035 13.5394 14.0168 13.4671 14.0155C13.3947 14.0143 13.3233 13.9984 13.2572 13.969C13.191 13.9395 13.1315 13.897 13.0822 13.8441L6.99437 7.75714L0.906554 13.8441C0.804365 13.9393 0.669207 13.9911 0.529553 13.9886C0.389899 13.9862 0.256653 13.9296 0.157888 13.8308C0.0591221 13.7321 0.00254801 13.5988 8.3984e-05 13.4592C-0.00238005 13.3195 0.0494583 13.1844 0.144678 13.0822L6.23159 6.99437L0.144678 0.906554C0.0494583 0.804365 -0.00238005 0.669207 8.3984e-05 0.529553C0.00254801 0.389899 0.0591221 0.256653 0.157888 0.157888C0.256653 0.0591221 0.389899 0.00254801 0.529553 8.3984e-05C0.669207 -0.00238005 0.804365 0.0494583 0.906554 0.144678L6.99437 6.23159L13.0822 0.144678C13.1844 0.0494583 13.3195 -0.00238005 13.4592 8.3984e-05C13.5988 0.00254801 13.7321 0.0591221 13.8308 0.157888C13.9296 0.256653 13.9862 0.389899 13.9886 0.529553C13.9911 0.669207 13.9393 0.804365 13.8441 0.906554L7.75714 6.99437L13.8441 13.0822Z"
+            fill="#BCBCBC" />
+        </svg>
+      </span>
+
+      <form action="#" class="trade-in__inner">
+        <h3>
+          Запланировать приезд
+        </h3>
+
+        <h4>Выберите удобное для Вас время</h4>
+
+        <div class="trade-in__inputs">
+          <input class="footer__form-input" type="text" placeholder="Имя">
+
+          <select class="footer__form-input form__input-select" name="select1" data-select-input>
+            <option selected="selected">ALSVIN</option>
+            <option>CS 35 PLUS NEW </option>
+            <option>CS 55 PLUS</option>
+            <option>CS 75 PLUS</option>
+            <option>CS 85</option>
+            <option>HUNTER</option>
+            <option>UNI-V</option>
+            <option>UNI-K</option>
+            <option>UNI-T</option>
+            <option>CS 95</option>
+            <option>LAMORE</option>
+            <option>EADO PLUS</option>
+
+          </select>
+
+          <div class="selects-wrapper">
+            <select class="footer__form-input form__input-select" name="select2" data-select-input>
+              <option value="1" selected="selected">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+
+            </select>
+
+            <select class="footer__form-input form__input-select" name="select3" data-select-input>
+              <option value="Января" selected="selected">Января</option>
+              <option value="Февраля">Февраля</option>
+              <option value="Марта">Марта</option>
+              <option value="Апреля">Апреля</option>
+              <option value="Мая">Мая</option>
+              <option value="Июня">Июня</option>
+              <option value="Июля">Июля</option>
+              <option value="Августа">Августа</option>
+              <option value="Сентября">Сентября</option>
+              <option value="Октября">Октября</option>
+              <option value="Ноября">Ноября</option>
+              <option value="Декабря">Декабря</option>
+
+            </select>
+          </div>
+        </div>
+
+        <div class="trade-in__footer">
+          <div class="get-offer__form consultation__form">
+            <input class="footer__form-input" type="tel" placeholder="+7 (___) ___-____" data-mask-input>
+
+            <a class="btn" href="#">Отправить заявку</a>
+
+            <label for="footer-checkbox7" class="footer__form-label">
+              <input type="checkbox" class="footer__form-checkbox" name="footer-checkbox7" id="footer-checkbox7">
+
+              <div class="footer__form-checkbox-decor"></div>
+
+              <p>Согласие на обработку персональных данных</p>
+            </label>
+          </div>
+
+          <div class="trade-in__picture">
+            <img src="./img/modals/4.png" alt="">
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <button class="open-modal-btn" data-modal-id="banner-modal1">Open Modal Pop up всплывающее окно 1</button>
+  <div class="modal" id="banner-modal1">
+    <div class="modal-content banner-modal">
+      <span class="close-modal-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+          <path
+            d="M13.8441 13.0822C13.897 13.1315 13.9395 13.191 13.969 13.2572C13.9984 13.3233 14.0143 13.3947 14.0155 13.4671C14.0168 13.5394 14.0035 13.6113 13.9764 13.6785C13.9493 13.7456 13.9089 13.8065 13.8577 13.8577C13.8065 13.9089 13.7456 13.9493 13.6785 13.9764C13.6113 14.0035 13.5394 14.0168 13.4671 14.0155C13.3947 14.0143 13.3233 13.9984 13.2572 13.969C13.191 13.9395 13.1315 13.897 13.0822 13.8441L6.99437 7.75714L0.906554 13.8441C0.804365 13.9393 0.669207 13.9911 0.529553 13.9886C0.389899 13.9862 0.256653 13.9296 0.157888 13.8308C0.0591221 13.7321 0.00254801 13.5988 8.3984e-05 13.4592C-0.00238005 13.3195 0.0494583 13.1844 0.144678 13.0822L6.23159 6.99437L0.144678 0.906554C0.0494583 0.804365 -0.00238005 0.669207 8.3984e-05 0.529553C0.00254801 0.389899 0.0591221 0.256653 0.157888 0.157888C0.256653 0.0591221 0.389899 0.00254801 0.529553 8.3984e-05C0.669207 -0.00238005 0.804365 0.0494583 0.906554 0.144678L6.99437 6.23159L13.0822 0.144678C13.1844 0.0494583 13.3195 -0.00238005 13.4592 8.3984e-05C13.5988 0.00254801 13.7321 0.0591221 13.8308 0.157888C13.9296 0.256653 13.9862 0.389899 13.9886 0.529553C13.9911 0.669207 13.9393 0.804365 13.8441 0.906554L7.75714 6.99437L13.8441 13.0822Z"
+            fill="#BCBCBC" />
+        </svg>
+      </span>
+
+      <div class="banner-modal__picture">
+        <picture>
+          <source media="(max-width: 556px)" srcset="./img/modals/banner-modal-1-mobile.jpg" />
+          <source media="(min-width: 557px)" srcset="./img/modals/banner-modal-1.jpg" />
+          <img src="./img/modals/banner-modal-1.jpg" alt="banner-modal">
+        </picture>
+      </div>
+    </div>
+  </div>
+
+  <button class="open-modal-btn" data-modal-id="banner-modal2">Open Modal Pop up всплывающее окно 2</button>
+  <div class="modal" id="banner-modal2">
+    <div class="modal-content banner-modal">
+      <span class="close-modal-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+          <path
+            d="M13.8441 13.0822C13.897 13.1315 13.9395 13.191 13.969 13.2572C13.9984 13.3233 14.0143 13.3947 14.0155 13.4671C14.0168 13.5394 14.0035 13.6113 13.9764 13.6785C13.9493 13.7456 13.9089 13.8065 13.8577 13.8577C13.8065 13.9089 13.7456 13.9493 13.6785 13.9764C13.6113 14.0035 13.5394 14.0168 13.4671 14.0155C13.3947 14.0143 13.3233 13.9984 13.2572 13.969C13.191 13.9395 13.1315 13.897 13.0822 13.8441L6.99437 7.75714L0.906554 13.8441C0.804365 13.9393 0.669207 13.9911 0.529553 13.9886C0.389899 13.9862 0.256653 13.9296 0.157888 13.8308C0.0591221 13.7321 0.00254801 13.5988 8.3984e-05 13.4592C-0.00238005 13.3195 0.0494583 13.1844 0.144678 13.0822L6.23159 6.99437L0.144678 0.906554C0.0494583 0.804365 -0.00238005 0.669207 8.3984e-05 0.529553C0.00254801 0.389899 0.0591221 0.256653 0.157888 0.157888C0.256653 0.0591221 0.389899 0.00254801 0.529553 8.3984e-05C0.669207 -0.00238005 0.804365 0.0494583 0.906554 0.144678L6.99437 6.23159L13.0822 0.144678C13.1844 0.0494583 13.3195 -0.00238005 13.4592 8.3984e-05C13.5988 0.00254801 13.7321 0.0591221 13.8308 0.157888C13.9296 0.256653 13.9862 0.389899 13.9886 0.529553C13.9911 0.669207 13.9393 0.804365 13.8441 0.906554L7.75714 6.99437L13.8441 13.0822Z"
+            fill="#BCBCBC" />
+        </svg>
+      </span>
+
+      <div class="banner-modal__picture">
+
+
+        <picture>
+          <source media="(max-width: 556px)" srcset="./img/modals/banner-modal-2-mobile.jpg" />
+          <source media="(min-width: 557px)" srcset="./img/modals/banner-modal-2.jpg" />
+          <img src="./img/modals/banner-modal-2.jpg" alt="banner-modal">
+        </picture>
+
+      </div>
+    </div>
+  </div>
 </div>
   </main>
 
@@ -172,8 +386,10 @@
 
 </body>
 
-<script src="./js/imask.js"></script>
 <script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/imask.js"></script>
+<script src="./js/jquery-3.7.1.min.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
 <script src="./js/scripts.min.js"></script>
 
 </html>

@@ -114,10 +114,17 @@
     border-bottom: 1px solid #FFF;
     color: #FFF;
     font-family: "Montserrat", sans-serif;
+    outline: 0;
     font-size: 15.71px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+    &:hover,
+    &:active,
+    &:focus {
+      border-color: #f58113 !important;
+    }
 
     &::placeholder {
       color: #FFF;

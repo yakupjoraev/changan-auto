@@ -102,6 +102,13 @@ function modelsMore() {
 
 modelsMore();
 
+$(function () {
+  $('[data-select-input]').each(function () {
+    const selectmenuInstance = $(this).selectmenu();
+    console.log(selectmenuInstance);
+  });
+});
+
 
 const openModalBtns = document.querySelectorAll('.open-modal-btn');
 const closeModalBtns = document.querySelectorAll('.close-modal-btn');
