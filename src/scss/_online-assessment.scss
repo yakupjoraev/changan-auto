@@ -5,11 +5,11 @@
   background-size: cover;
   background-position: center;
 
-  @media (max-width: $breakpoint768) {
+  @media (max-width: $breakpoint480) {
     background-image: url('../img/online-assessment-bg-mobile.png');
     background-position: top center;
-    background-size: 100% 224px;
-    padding-top: 224px;
+    background-size: 100% 278px;
+    padding-top: 272px;
   }
 
   // .online-assessment__inner

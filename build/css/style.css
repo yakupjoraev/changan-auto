@@ -1026,7 +1026,7 @@ html {
 
 .map__geo {
   position: absolute;
-  top: 50%;
+  top: 42%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -1139,6 +1139,10 @@ html {
   font-weight: 500;
   line-height: normal;
   color: #FFF;
+}
+
+.footer__top a:hover {
+  color: #f58113;
 }
 
 .footer__logo img {
@@ -2339,7 +2343,7 @@ a.ui-button:active,
   }
 
   .hero__picture {
-    margin-bottom: 0;
+    margin-bottom: -16px;
   }
 
   .marquee {
@@ -2575,13 +2579,6 @@ a.ui-button:active,
     font-size: 14px;
   }
 
-  .online-assessment {
-    background-image: url("../img/online-assessment-bg-mobile.png");
-    background-position: top center;
-    background-size: 100% 224px;
-    padding-top: 224px;
-  }
-
   .online-assessment__info {
     max-width: 100vw;
     width: 100vw;
@@ -2629,6 +2626,10 @@ a.ui-button:active,
   .map__map {
     position: relative;
     height: 312px;
+  }
+
+  .map__geo {
+    top: 40%;
   }
 
   .map .container {
@@ -2784,6 +2785,27 @@ a.ui-button:active,
 @media (max-width: 479.98px) {
   .container {
     max-width: none;
+  }
+
+  .online-assessment {
+    background-image: url("../img/online-assessment-bg-mobile.png");
+    background-position: top center;
+    background-size: 100% 278px;
+    padding-top: 272px;
+  }
+
+  .map__map > img {
+    -o-object-fit: none;
+       object-fit: none;
+  }
+
+  .map__geo {
+    top: 26%;
+    left: 47%;
+  }
+
+  .map__geo img {
+    width: 45px;
   }
 }
 

@@ -36,6 +36,10 @@
     padding-bottom: 28px;
   }
 
+  @media (max-width: $breakpoint480) {
+    // background-image: url('../img/hero/hero-bg-mobile.jpg');
+  }
+
   // .hero__inner
 
   &__inner {
@@ -224,7 +228,7 @@
     }
 
     @media (max-width: $breakpoint768) {
-      margin-bottom: 0;
+      margin-bottom: -16px;
     }
   }
 }
