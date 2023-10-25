@@ -2343,7 +2343,7 @@ a.ui-button:active,
   }
 
   .hero__picture {
-    margin-bottom: -16px;
+    margin-bottom: 0;
   }
 
   .marquee {
@@ -2790,8 +2790,8 @@ a.ui-button:active,
   .online-assessment {
     background-image: url("../img/online-assessment-bg-mobile.png");
     background-position: top center;
-    background-size: 100% 278px;
-    padding-top: 272px;
+    background-size: 100% 330px;
+    padding-top: 321px;
   }
 
   .map__map > img {
@@ -2810,6 +2810,11 @@ a.ui-button:active,
 }
 
 @media (max-width: 359px) {
+  .online-assessment {
+    background-size: 100% 280px;
+    padding-top: 270px;
+  }
+
   .banner::before {
     background-size: 100% 200px;
   }

@@ -8,8 +8,13 @@
   @media (max-width: $breakpoint480) {
     background-image: url('../img/online-assessment-bg-mobile.png');
     background-position: top center;
-    background-size: 100% 278px;
-    padding-top: 272px;
+    background-size: 100% 330px;
+    padding-top: 321px;
+  }
+
+  @media (max-width: 359px) {
+    background-size: 100% 280px;
+    padding-top: 270px;
   }
 
   // .online-assessment__inner
@@ -39,44 +44,4 @@
       padding: 30px 20px;
     }
   }
-}
-
-.consultation {
-
-  // .consultation__info
-
-  &__info {}
-
-  // .consultation__title
-
-  &__title {}
-
-  // .consultation__label
-
-  &__label {}
-
-  // .consultation__form
-
-  &__form {}
-
-  // .consultation__btn
-
-  &__btn {}
-}
-
-.btn {}
-
-.footer {
-
-  // .footer__form-label
-
-  &__form-label {}
-
-  // .footer__form-checkbox
-
-  &__form-checkbox {}
-
-  // .footer__form-checkbox-decor
-
-  &__form-checkbox-decor {}
 }
